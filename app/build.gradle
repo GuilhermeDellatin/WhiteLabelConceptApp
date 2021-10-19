@@ -33,6 +33,28 @@ android {
     buildFeatures {
         viewBinding true
     }
+    productFlavors {
+        flavorDimensions 'product', 'side'
+        suplements {
+            dimension 'product'
+            applicationIdSuffix '.suplements'
+            manifestPlaceholders.appName = "Suplements"
+        }
+        books {
+            dimension 'product'
+            applicationIdSuffix '.books'
+            manifestPlaceholders.appName = "Books"
+        }
+        client {
+            dimension 'side'
+            manifestPlaceholders.appNameSuffix = ""
+        }
+        admin {
+            dimension 'side'
+            applicationIdSuffix '.admin'
+            manifestPlaceholders.appNameSuffix = ".Admin"
+        }
+    }
 }
 
 dependencies {
@@ -40,7 +62,7 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.6.0'
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
