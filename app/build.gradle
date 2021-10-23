@@ -35,10 +35,10 @@ android {
     }
     productFlavors {
         flavorDimensions 'product', 'side'
-        suplements {
+        supplements {
             dimension 'product'
-            applicationIdSuffix '.suplements'
-            manifestPlaceholders.appName = "Suplements"
+            applicationIdSuffix '.supplements'
+            manifestPlaceholders.appName = "Supplements"
         }
         books {
             dimension 'product'
