@@ -1,4 +1,4 @@
-package com.gfdellatin.whitelabelconceptapp.ui.products.addproduct
+package com.gfdellatin.whitelabelconceptapp.ui.addproduct
 
 import android.net.Uri
 import android.os.Bundle
