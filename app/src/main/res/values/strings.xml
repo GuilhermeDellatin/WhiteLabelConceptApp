@@ -1,9 +1,14 @@
 <resources>
+    <!-- ProductsFragment -->
     <string name="app_name">WhiteLabelConceptApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="products_screen_title">Produtos</string>
+    <string name="products_fab_add_product">Adicionar Produtos</string>
+
+    <!-- AddProductFragment -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_product_field_description_hint">Descrição</string>
     <string name="add_product_field_price_hint">Preço</string>
     <string name="add_product_button_add_product">Adicionar</string>
     <string name="add_product_screen_title">Adicionar Produto</string>
+    <string name="add_product_field_error">Campo Obrigatório</string>
 </resources>
