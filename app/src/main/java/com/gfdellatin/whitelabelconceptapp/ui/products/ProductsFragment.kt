@@ -14,6 +14,8 @@ class ProductsFragment : Fragment() {
     private var _binding: FragmentProductsBinding? = null
     private val binding get() = _binding!!
 
+    private val productsAdapter = ProductsAdapter()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -21,5 +23,22 @@ class ProductsFragment : Fragment() {
     ): View? {
         _binding = FragmentProductsBinding.inflate(inflater, container, false)
         return inflater.inflate(R.layout.fragment_products, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setRecyclerView()
+    }
+
+    private fun setRecyclerView() {
+        binding.recyclerProducts.run {
+            setHasFixedSize(true)
+            adapter = productsAdapter
+        }
+    }
+
+    override fun onDestroyView() {
+        _binding = null
+        super.onDestroyView()
     }
 }
