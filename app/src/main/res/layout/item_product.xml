@@ -28,6 +28,7 @@
         app:layout_constraintEnd_toEndOf="@id/image_product"
         app:layout_constraintStart_toStartOf="@id/image_product"
         app:layout_constraintTop_toBottomOf="@id/image_product"
+        style="@style/Text.Primary"
         tools:text="Omnibus Os Eternos de Jack Kirby"/>
 
     <TextView
@@ -40,6 +41,7 @@
         app:layout_constraintEnd_toEndOf="@id/text_description"
         app:layout_constraintStart_toStartOf="@id/text_description"
         app:layout_constraintTop_toBottomOf="@id/text_description"
+        style="@style/Text.Secondary"
         tools:text="R$ 149,90"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
