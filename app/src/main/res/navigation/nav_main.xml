@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/productsFragment"
         android:name="com.gfdellatin.whitelabelconceptapp.ui.products.ProductsFragment"
-        android:label="Products"
+        android:label="@string/products_screen_title"
         tools:layout="@layout/fragment_products" >
         <action
             android:id="@+id/action_productsFragment_to_addProductFragment"

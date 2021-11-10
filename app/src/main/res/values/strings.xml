@@ -1,7 +1,6 @@
 <resources>
     <!-- ProductsFragment -->
     <string name="app_name">WhiteLabelConceptApp</string>
-    <string name="products_screen_title">Produtos</string>
     <string name="products_fab_add_product">Adicionar Produtos</string>
 
     <!-- AddProductFragment -->
